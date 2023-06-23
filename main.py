@@ -7,8 +7,6 @@ print(text_1)
 
 
 
-
-
 # def sort_alph(text):
 #     text =
 
