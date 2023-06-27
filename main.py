@@ -1,14 +1,15 @@
+topic = input("What is my name?")
 answer = input("Enter your answer: ")
 correct_answer = input("Enter the correct one: ")
-def question(correct_answer, answer):
-    if correct_answer == answer:
-        print("you are the winner")
-    elif correct_answer != answer:
-        pass
-    elif correct_answer != answer:
-        pass
-    elif correct_answer != answer:
-
-        print("Game over")
-
-
+if answer == correct_answer:
+    print("you are the winner")
+if answer != correct_answer:
+    print("2 attempts left")
+    pass
+answer = input("Enter your answer: ")
+if answer != correct_answer:
+    print("1 attempt left")
+    pass
+answer = input("Enter your answer: ")
+if answer != correct_answer:
+    print("failed")
