@@ -26,7 +26,7 @@ class Employee:
 
 class Freelance(Employee):
     def __init__(self, name, salary, email):
-        super.__init__(name, salary)
+        super().__init__(name, salary)
         self.email = email
     def display_email(self):
         print("Name:", self.name, "salary", self.salary, "email", self.email)
