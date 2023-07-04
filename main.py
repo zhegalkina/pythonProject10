@@ -5,4 +5,5 @@ class Employee:
     def display_employee(self):
         print(name, salary)
 
+
 display = Employee(input("Enter name "), input("Enter salary "))
