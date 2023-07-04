@@ -36,26 +36,31 @@
 
 
 class Animal:
-    def __init__(self, legs, tail, domestic, mammals):
-        self.legs = legs
-        self.tail = tail
-        self.domestic = domestic
-        self.mammals = mammals
+    def __init__(self):
+        self.legs = 4
+        self.tail = True
+        self.domestic = True
+        self.mammals = True
     def is_animals(self):
-        if self.mammals == True:
+        if self.mammals:
             print("mammals")
-        else:
-            print("not mammals")
+
 
     def is_domestic(self):
-        if self.domestic == True:
+        if self.domestic :
             print("domestic")
-        else:
-            print("not domestic")
 
-example = Animal(4, True, True, True)
-example.is_animals()
-example.is_domestic()
+
+class Dogs(Animal):
+    def __init__(self):
+        super().__init__()
+    def is_mammal(self):
+        super().is_mammal()
+
+Tom = Dogs()
+Tom.is_mammal()
+
+
 
 
 
