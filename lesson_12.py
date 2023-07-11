@@ -13,3 +13,8 @@ class Passport:
 
 passports = Passport('Tanya', 'Z', 17_05, 'Rus', '111')
 passports.PrintInfo()
+
+class ForeignPassport(Passport):
+    def __init__(self, visa):
+        self.visa = visa
+
