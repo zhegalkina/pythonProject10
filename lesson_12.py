@@ -22,7 +22,7 @@ class ForeignPassport(Passport):
         super().PrintInfo()
         print(f"Visa: {self.visa}")
 
-passports_foreign = ForeignPassport('Tanya', 'Z', 17_05, 'Rus', '111', 'Visa')
+passports_foreign = ForeignPassport('Tanya', 'Z', 17_05, 'Rus', '111', 'Egypt')
 passports_foreign.PrintInfo()
 
 
